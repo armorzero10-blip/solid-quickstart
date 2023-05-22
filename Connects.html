@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Submitting</title>
+
+  <style>
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+  *{
+
+      font-family: 'Poppins', sans-serif;
+
+  }
+
+</style>
+
+</head>
+
+<body>
+
+   <div class="backdrop">
+
+  <center style="position: relative">
+
+    <h2 style="color: white">SAFE MOTIVATION<svg width="20" height="16" stroke-width="1.6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M10.5213 2.62368C11.3147 1.75255 12.6853 1.75255 13.4787 2.62368L14.4989 3.74391C14.8998 4.18418 15.4761 4.42288 16.071 4.39508L17.5845 4.32435C18.7614 4.26934 19.7307 5.23857 19.6757 6.41554L19.6049 7.92905C19.5771 8.52388 19.8158 9.10016 20.2561 9.50111L21.3763 10.5213C22.2475 11.3147 22.2475 12.6853 21.3763 13.4787L20.2561 14.4989C19.8158 14.8998 19.5771 15.4761 19.6049 16.071L19.6757 17.5845C19.7307 18.7614 18.7614 19.7307 17.5845 19.6757L16.071 19.6049C15.4761 19.5771 14.8998 19.8158 14.4989 20.2561L13.4787 21.3763C12.6853 22.2475 11.3147 22.2475 10.5213 21.3763L9.50111 20.2561C9.10016 19.8158 8.52388 19.5771 7.92905 19.6049L6.41553 19.6757C5.23857 19.7307 4.26934 18.7614 4.32435 17.5845L4.39508 16.071C4.42288 15.4761 4.18418 14.8998 3.74391 14.4989L2.62368 13.4787C1.75255 12.6853 1.75255 11.3147 2.62368 10.5213L3.74391 9.50111C4.18418 9.10016 4.42288 8.52388 4.39508 7.92905L4.32435 6.41553C4.26934 5.23857 5.23857 4.26934 6.41554 4.32435L7.92905 4.39508C8.52388 4.42288 9.10016 4.18418 9.50111 3.74391L10.5213 2.62368Z" stroke="currentColor" stroke-width="1.5"/> <path d="M9 12L11 14L15 10" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/> </svg></h2>
+
+    <svg style="color: white" xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16"> <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" fill="white"></path> </svg>
+
+   <b><h2 style="text-align: center;padding-right: 15%;padding-left: 15%;color: white">Submitting your vote ...<br></h2></b>
+
+   
+
+     <div class="loader">
+
+       <div class="dot"></div>
+
+       <div class="dot"></div>
+
+       <div class="dot"></div>
+
+       <div class="dot"></div>
+
+       <div class="dot"></div>
+
+     </div>
+
+<script>         setTimeout(function(){
+
+        const urlParams = new URLSearchParams(window.location.search);
+
+const myParam = urlParams.get('app');
+
+            window.location.href = 'customerfeedback.html';
+
+         }, 10000);
+
+          </script>
+
+</center>
+
+</body>
+
+</html>
+
+   </div>
+
+<style>
+
+  @use postcss-cssnext;
+
+:root {
+
+  --min-size: 2px;
+
+  --max-size: 20px;
+
+}
+
+* {
+
+  box-sizing: border-box;
+
+}
+
+html, body, .backdrop {
+
+  height: 100%;
+
+  width: 100%;
+
+  margin: 0;
+
+  position: fixed;
+
+}
+
+.backdrop {
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  height: 100%;
+
+  width: 100%;
+
+  background: linear-gradient(90deg, #6200ea, #d500f9);
+
+  
+
+	linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+
+	background-size: 400% 400%;
+
+	animation: gradientBG 15s ease infinite;
+
+}
+
+	.color-change-5x{-webkit-animation:color-change-5x 10s ease-in-out infinite alternate-reverse both;animation:color-change-5x 10s ease-in-out infinite alternate-reverse both}
+
+@keyframes gradientBG {
+
+	0% {
+
+		background-position: 0% 50%;
+
+	}
+
+	50% {
+
+		background-position: 100% 50%;
+
+	}
+
+	100% {
+
+		background-position: 0% 50%;
+
+	}
+
+}
+
+.loader {
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+}
+
+.dot {
+
+  background: white;
+
+  margin: 5px;
+
+  animation-name: loader;
+
+  animation-duration: 1s;
+
+  animation-iteration-count: infinite;
+
+  animation-direction: alternate;
+
+}
+
+.dot:nth-child(1) {
+
+  animation-delay: 0.2s;
+
+}
+
+.dot:nth-child(2) {
+
+  animation-delay: 0.4s;
+
+}
+
+.dot:nth-child(3) {
+
+  animation-delay: 0.6s;
+
+}
+
+.dot:nth-child(4) {
+
+  animation-delay: 0.8s;
+
+}
+
+.dot:nth-child(5) {
+
+  animation-delay: 1s;}
+
+  
+
+  @keyframes loader {
+
+    from {
+
+      width: var(--min-size);
+
+      height: var(--min-size);
+
+      border-radius: calc(var(--min-size) / 2);
+
+    }
+
+  
+
+    to {
+
+      width: var(--max-size);
+
+      height: var(--max-size);
+
+      border-radius: calc(var(--max-size) / 2);
+
+    }
+
+  }
+
+</style>
